@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+    <defs>
+        <filter id="a" width="153.8%" height="153.8%" x="-26.9%" y="-19.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFCF00"/>
+            <stop offset="100%" stop-color="#FFB700"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4 2)">
+        <path fill="url(#b)" d="M22.651 26H3.35C1.499 26 0 24.5 0 22.651V3.35C0 1.499 1.5 0 3.349 0H22.65C24.501 0 26 1.5 26 3.349V22.65C26 24.501 24.5 26 22.651 26"/>
+        <g fill="#1C1E21" opacity=".84">
+            <path d="M8.729 20.406c3.005.18 5.926.18 8.931 0 1.44-.228 2.587-1.359 2.803-2.763a63.735 63.735 0 0 0 0-8.898c-.216-1.404-1.364-2.535-2.803-2.763a73.992 73.992 0 0 0-8.931 0c-1.44.228-2.587 1.359-2.803 2.763a63.71 63.71 0 0 0 0 8.898c.216 1.404 1.364 2.535 2.803 2.763zm4.466 1.362c-1.516 0-3.032-.046-4.568-.138l-.055-.006c-1.988-.3-3.577-1.873-3.863-3.825l-.005-.047a64.934 64.934 0 0 1 0-9.116l.005-.047c.286-1.953 1.875-3.525 3.863-3.825l.054-.005a75.21 75.21 0 0 1 9.136 0l.055.005c1.988.3 3.577 1.872 3.863 3.825l.005.047a64.958 64.958 0 0 1 0 9.116l-.005.047c-.286 1.952-1.875 3.525-3.863 3.825l-.055.006a75.916 75.916 0 0 1-4.567.138z"/>
+            <path d="M13.195 9.99a3.208 3.208 0 0 0-3.205 3.204 3.208 3.208 0 0 0 3.205 3.204 3.208 3.208 0 0 0 3.204-3.204 3.208 3.208 0 0 0-3.204-3.204zm0 7.635a4.437 4.437 0 0 1-4.432-4.43 4.437 4.437 0 0 1 4.432-4.433 4.437 4.437 0 0 1 4.43 4.432 4.436 4.436 0 0 1-4.43 4.431zM18.925 8.512a.972.972 0 1 1-1.944 0 .972.972 0 0 1 1.944 0"/>
+        </g>
+    </g>
+</svg>

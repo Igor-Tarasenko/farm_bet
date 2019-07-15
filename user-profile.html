@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/datepicker.css" rel="stylesheet">
+    <link href="./css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <title>FARM.BET</title>
+</head>
+<body>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Deposit</h5>
+                <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="first-deposit-block first-deposit-block-js">
+                    <div class="main-deposit-block">
+                        <div class="deposit-block">
+                            <div class="deposit-img">
+                                <img src="./img/visa.svg" alt="">
+                                <img src="./img/mastercard.svg" alt="">
+                            </div>
+                            <div class="deposit-info">
+                                <div class="deposit-value">
+                                    <p>Min</p>
+                                    <p>Max</p>
+                                    <p>Free</p>
+                                </div>
+                                <div class="deposit-summ-money">
+                                    <p>10,00 USD</p>
+                                    <p>3000,00 USD</p>
+                                    <p>00,00 USD</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="change-block change-block-js">
+                            <img src="./img/deposit.svg" alt="">
+                            <p>Change method</p>
+                        </div>
+                    </div>
+                    <div class="deposit-card">
+                        <h3>Deposit with card</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue nunc vel ipsum sollicitudin tempor vitae nec libero. </p>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="summ">How much would you like to deposit</label>
+                                <input type="text" name="summ" class="form-control"
+                                       id="summ">
+                            </div>
+                            <h3>Deposit Summary</h3>
+                            <div class="summary-deposit">
+                                <div class="name-of-deposit">
+                                    <p>Deposit</p>
+                                    <p>Free</p>
+                                </div>
+                                <div class="value-of-deposit">
+                                    <p>3000,00 USD</p>
+                                    <p>00,00 USD</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="second-deposit-block second-deposit-block-js">
+                    <div class="block-with-all-deposits">
+                        <div class="some-deposit some-deposit-js">
+                            <div class="some-deposit-img">
+                                <img src="./img/visa.svg" alt="">
+                                <img src="./img/mastercard.svg" alt="">
+                            </div>
+                            <div class="some-deposit-text-value">
+                                <p>Min</p>
+                                <p>Max</p>
+                                <p>Free</p>
+                            </div>
+                            <div class="some-deposit-text-money">
+                                <p>00,00 USD</p>
+                                <p>3000,00 USD</p>
+                                <p>00,00 USD</p>
+                            </div>
+                        </div>
+                        <div class="some-deposit some-deposit-js">
+                            <div class="some-deposit-img">
+                                <img src="./img/visa.svg" alt="">
+                                <img src="./img/mastercard.svg" alt="">
+                            </div>
+                            <div class="some-deposit-text-value">
+                                <p>Min</p>
+                                <p>Max</p>
+                                <p>Free</p>
+                            </div>
+                            <div class="some-deposit-text-money">
+                                <p>00,00 USD</p>
+                                <p>3000,00 USD</p>
+                                <p>00,00 USD</p>
+                            </div>
+                        </div>
+                        <div class="some-deposit some-deposit-js">
+                            <div class="some-deposit-img">
+                                <img src="./img/visa.svg" alt="">
+                                <img src="./img/mastercard.svg" alt="">
+                            </div>
+                            <div class="some-deposit-text-value">
+                                <p>Min</p>
+                                <p>Max</p>
+                                <p>Free</p>
+                            </div>
+                            <div class="some-deposit-text-money">
+                                <p>00,00 USD</p>
+                                <p>3000,00 USD</p>
+                                <p>00,00 USD</p>
+                            </div>
+                        </div>
+                        <div class="some-deposit some-deposit-js">
+                            <div class="some-deposit-img">
+                                <img src="./img/visa.svg" alt="">
+                                <img src="./img/mastercard.svg" alt="">
+                            </div>
+                            <div class="some-deposit-text-value">
+                                <p>Min</p>
+                                <p>Max</p>
+                                <p>Free</p>
+                            </div>
+                            <div class="some-deposit-text-money">
+                                <p>00,00 USD</p>
+                                <p>3000,00 USD</p>
+                                <p>00,00 USD</p>
+                            </div>
+                        </div>
+                        <div class="some-deposit some-deposit-js">
+                            <div class="some-deposit-img">
+                                <img src="./img/visa.svg" alt="">
+                                <img src="./img/mastercard.svg" alt="">
+                            </div>
+                            <div class="some-deposit-text-value">
+                                <p>Min</p>
+                                <p>Max</p>
+                                <p>Free</p>
+                            </div>
+                            <div class="some-deposit-text-money">
+                                <p>00,00 USD</p>
+                                <p>3000,00 USD</p>
+                                <p>00,00 USD</p>
+                            </div>
+                        </div>
+                        <div class="some-deposit some-deposit-js">
+                            <div class="some-deposit-img">
+                                <img src="./img/visa.svg" alt="">
+                                <img src="./img/mastercard.svg" alt="">
+                            </div>
+                            <div class="some-deposit-text-value">
+                                <p>Min</p>
+                                <p>Max</p>
+                                <p>Free</p>
+                            </div>
+                            <div class="some-deposit-text-money">
+                                <p>00,00 USD</p>
+                                <p>3000,00 USD</p>
+                                <p>00,00 USD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-deposit-block_information">
+                        <div class="info">
+                            <p class="description">Secure</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue nunc vel ipsum sollicitudin tempor vitae nec libero. </p>
+                        </div>
+                        <div class="info">
+                            <p class="description">Quick</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue nunc vel ipsum sollicitudin tempor vitae nec libero. </p>
+                        </div>
+                        <div class="info">
+                            <p class="description">Withdraw with ease</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue nunc vel ipsum sollicitudin tempor vitae nec libero. </p>
+                        </div>
+                        <p class="cant-find">Can't find your preferred deposit method? <br>
+                            <a href="!#">Click here</a> to let us know which one!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="yellow-btn btn-deposit" data-dismiss="modal">Deposit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="row justify-content-between align-items-center head">
+            <div class="logo">
+                <a href="#"><img src="./img/full-logo-for-dark-bg.svg" alt=""></a>
+            </div>
+            <div class="user-and-social-block">
+                <div class="social">
+                    <a href="!#">
+                        <img src="./img/instagram.png" alt="instagram">
+                    </a>
+                    <a href="!#">
+                        <img src="./img/twitter.png" alt="twitter">
+                    </a>
+                    <a href="!#">
+                        <img src="./img/facebook.png" alt="">
+                    </a>
+                </div>
+                <div class="language-and-time">
+                    <div class="english">
+                        <div class="flag">
+                            <img src="./img/flag.png" alt="american-flag">
+                        </div>
+                        <div class="time">
+                            <p>7:02 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-block">
+                    <div class="user-not-register">
+                        <a href="#!">Login</a>
+                        <a href="!#" class="btn-register">Register</a>
+                    </div>
+                    <div class="user-register">
+                        <button class="registred">Bobby Callahan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="wrapper">
+    <div class="container">
+        <div class="user-profile">
+            <div class="row">
+                <div class="col-lg-2 pr-lg-0">
+                    <div class="user-menu">
+                        <div class="user-account">
+                            <div class="photo-of-user">
+                                <img src="./img/player.png" alt="">
+                                <div class="change-photo"></div>
+                            </div>
+                            <p class="name">Bobby Callahan</p>
+                            <p class="count-money">432,95 USD</p>
+                            <button class="deposit yellow-btn" data-toggle="modal" data-target="#exampleModal">Deposit</button>
+                        </div>
+                        <div class="left-menu">
+                            <ul>
+                                <li class="menu-js active overview-menu-js"><span class="overview overview-active"></span>Overview</li>
+                                <li class="menu-js bet-menu-js"><span class="bet"></span>Bet history</li>
+                                <li class="menu-js"><span class="transactions"></span>Transactions</li>
+                                <li class="menu-js withdraw-menu-js"><span class="withdraw"></span>Withdraw</li>
+                                <li class="menu-js bonuses-menu-js"><span class="bonuses"></span>Bonuses</li>
+                                <li class="menu-js affiliate-menu-js"><span class="affiliate"></span>Affiliate program</li>
+                                <li class="menu-js responsible-menu-js"><span class="responsible"></span>Responsible gaming</li>
+                                <li class="menu-js account-menu-js"><span class="account"></span>Account</li>
+                                <li class="menu-js change-menu-js"><span class="change"></span>Change password</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 overview-js">
+                    <h2>Overview</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="balance-block">
+                                <h3>Balance</h3>
+                                <div class="balance-information-block">
+                                    <div class="real-money">
+                                        <p>Real money</p>
+                                        <p class="real-money-count">00,00 USD</p>
+                                    </div>
+                                    <div class="bonuses-money">
+                                        <p>Bonuses</p>
+                                        <p class="bonuses-money-count">00,00 USD</p>
+                                    </div>
+                                    <div class="total-money">
+                                        <p>Total</p>
+                                        <p class="total-money-count">00,00 USD</p>
+                                    </div>
+                                    <div class="additional-info">
+                                        <div class="deposit-block">
+                                            <span class="deposit-block_img"></span>
+                                            <p>Deposit</p>
+                                        </div>
+                                        <div class="withdraw-block">
+                                            <span class="withdraw-block_img"></span>
+                                            <p>Withdraw</p>
+                                        </div>
+                                        <div class="transaction-block">
+                                            <span class="transaction-block_img"></span>
+                                            <p>Transaction</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="balance-block">
+                                <h3>Account information</h3>
+                                <div class="balance-information-block">
+                                    <div class="login-user">
+                                        <p class="for-width">Login:</p>
+                                        <p>Bobby Callahan</p>
+                                    </div>
+                                    <div class="email-user">
+                                        <p class="for-width">Email:</p>
+                                        <p>bcallahan@gmail.com</p>
+                                    </div>
+                                    <div class="user-id">
+                                        <p class="for-width">User ID:</p>
+                                        <p>32229982</p>
+                                    </div>
+                                    <div class="additional-info">
+                                        <div class="edit-block">
+                                            <span class="edit-block_img"></span>
+                                            <p>Edit</p>
+                                        </div>
+                                        <div class="change-block">
+                                            <span class="change-block_img"></span>
+                                            <p>Change password</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 bet-js">
+                    <h2>Bet history</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="bet-block">
+                                <div class="bet-header-block">
+                                    <div class="bet-header-memory">
+                                        <p>All</p>
+                                        <p>Open</p>
+                                        <p>Settled</p>
+                                    </div>
+                                    <div class="bet-header-days">
+                                        <p>7 days</p>
+                                        <p>30 days</p>
+                                        <div class="calendar-block datepicker-here" data-position='right bottom'></div>
+                                    </div>
+                                </div>
+                                <div class="bet-main-block">
+                                    <div class="information-about-bet">
+                                        <div class="name-bet">
+                                            <p>Name of the bet</p>
+                                        </div>
+                                        <div class="status-bet">
+                                            <p class="open">Open</p>
+                                            <div class="status-bet_name-of-block">
+                                                <span>Status</span>
+                                            </div>
+                                        </div>
+                                        <div class="your-odd">
+                                            <p>1,25</p>
+                                            <div class="your-odd_name-of-block">
+                                                <span>Odd</span>
+                                            </div>
+                                        </div>
+                                        <div class="your-bet">
+                                            <p>5</p>
+                                            <div class="your-bet_name-of-block">
+                                                <span>your bet</span>
+                                            </div>
+                                        </div>
+                                        <div class="can-win-bet">
+                                            <p>50</p>
+                                            <div class="can-win_name-of-block">
+                                                <span>You can win</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="information-about-bet">
+                                        <div class="name-bet">
+                                            <p>Name of the bet</p>
+                                        </div>
+                                        <div class="status-bet">
+                                            <p class="open">Open</p>
+                                        </div>
+                                        <div class="your-odd">
+                                            <p>1,34</p>
+                                        </div>
+                                        <div class="your-bet">
+                                            <p>20</p>
+                                        </div>
+                                        <div class="can-win-bet">
+                                            <p>120</p>
+                                        </div>
+                                    </div>
+                                    <div class="information-about-bet">
+                                        <div class="name-bet">
+                                            <p>Name of the bet</p>
+                                        </div>
+                                        <div class="status-bet">
+                                            <p class="open">Open</p>
+                                        </div>
+                                        <div class="your-odd">
+                                            <p>1,56</p>
+                                        </div>
+                                        <div class="your-bet">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="can-win-bet">
+                                            <p>405</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 withdraw-js">
+                    <h2>Withdraw</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="withdraw-block">
+                                <div class="withdraw-header-block">
+                                    <div class="withdraw-header-memory">
+                                        <p>Withdraw</p>
+                                        <p>Withdrawal history</p>
+                                    </div>
+                                </div>
+                                <div class="withdraw-main-block">
+                                    <div class="withdraw-payment">
+                                        <div class="withdraw-payment-method">
+                                            <img src="./img/visa.svg" alt="">
+                                            <img src="./img/mastercard.svg" alt="">
+                                        </div>
+                                        <div class="withdraw-payment-method">
+                                            <img src="./img/skrill.svg" alt="">
+                                        </div>
+                                        <div class="withdraw-payment-method">
+                                            <img src="./img/neteller.svg" alt="">
+                                        </div>
+                                        <div class="withdraw-payment-method">
+                                            <img src="./img/astropay.png" alt="">
+                                        </div>
+                                        <div class="withdraw-payment-method">
+                                            <img src="./img/paysafecard.svg" alt="">
+                                        </div>
+                                        <div class="withdraw-payment-method">
+                                            <img src="./img/bitcoin.svg" alt="">
+                                        </div>
+                                        <div class="withdraw-payment-method">
+                                            <img src="./img/ecopayz.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <form class="withdraw-form">
+                                                <div class="form-group">
+                                                    <label for="cardNumber">Card Number</label>
+                                                    <input type="text" name="cardNumber" class="form-control"
+                                                           id="cardNumber">
+                                                </div>
+                                                <div class="two-inputs">
+                                                    <div class="form-group">
+                                                        <label for="expiration">Expiration</label>
+                                                        <input type="text" name="expiritation" class="form-control"
+                                                               id="expiration">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="cardHolder">Card holder</label>
+                                                        <input type="text" name="cardHolder" class="form-control" id="cardHolder">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p>Ammount</p>
+                                                    <label for="ammount">Withdrawable Ammount: 0 USD</label>
+                                                    <input type="text" name="ammount" class="form-control" id="ammount">
+                                                </div>
+                                                <button type="submit" class="yellow-btn withdraw-btn">Withdraw</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 bonuses-js">
+                    <h2>Bonuses</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="bonuses-block">
+                                        <h3>100% Deposit bonus!</h3>
+                                        <p class="text-bonus">Here's your first deposit bonus of 100%. It needs to be
+                                            wagered 12 times the bonus amount at a minimum odds of 1.70! Good luck!</p>
+                                        <p class="start-date-bonus">Start date: Jan 30, 2017</p>
+                                        <p class="end-date-bonus">End date: Jan 1, 2020</p>
+                                        <p class="some-info-about-bonuses">Terms and conditions apply to all bonuses</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bonuses-block">
+                                        <h3>Welcome bonus!</h3>
+                                        <p class="text-bonus">Here's your first deposit bonus of 100%. It needs to be
+                                            wagered 12 times the bonus amount at a minimum odds of 1.70! Good luck!</p>
+                                        <p class="start-date-bonus">Start date: Jan 30, 2017</p>
+                                        <p class="end-date-bonus">End date: Jan 1, 2020</p>
+                                        <p class="some-info-about-bonuses">Terms and conditions apply to all bonuses</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bonuses-block">
+                                        <h3>Welcome bonus!</h3>
+                                        <p class="text-bonus">Here's your first deposit bonus of 100%. It needs to be
+                                            wagered 12 times the bonus amount at a minimum odds of 1.70! Good luck!</p>
+                                        <p class="start-date-bonus">Start date: Jan 30, 2017</p>
+                                        <p class="end-date-bonus">End date: Jan 1, 2020</p>
+                                        <p class="some-info-about-bonuses">Terms and conditions apply to all bonuses</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 affiliate-js">
+                    <h2>Affiliate program</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="affiliate-block">
+                                        <h3>Become an affiliate</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue
+                                            nunc vel ipsum sollicitudin tempor vitae nec libero. Phasellus libero urna,
+                                            condimentum quis justo nec, mattis iaculis turpis. Suspendisse viverra,
+                                            felis sed vehicula convallis, ex elit convallis quam, vel aliquet massa nibh
+                                            quis elit. In tristique, nulla a sagittis tempus, ligula turpis tempor
+                                            velit, eu ornare libero purus nec sem. Ut auctor dui felis, commodo
+                                            consequat turpis vulputate vel. </p>
+                                        <div class="affiliate-block-link">
+                                            <p>Your affiliate link</p>
+                                            <div class="user-link">
+                                                <p class="text-user-link">LINK</p>
+                                                <div class="copy-user-link"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 responsible-js">
+                    <h2>Affiliate program</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="responsible-block">
+                                <div class="responsible-header-block">
+                                    <div class="responsible-header-memory">
+                                        <p>Deposit limit</p>
+                                        <p>self-exclusion</p>
+                                    </div>
+                                </div>
+                                <div class="responsible-main-block">
+                                    <p class="responsible-text">Set your maximum deposit limits to avoid bet with more
+                                        money that you can afford. For instance, if you set a weekly limit, it means
+                                        that we limit how much you can deposit during periods of 7 days each.</p>
+                                    <form class="responsible-form">
+                                        <div class="form-group">
+                                            <label for="monthly">Monthly (USD)</label>
+                                            <input type="text" name="monthly" class="form-control" id="monthly"
+                                                   placeholder="No limit">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="weekly">Weekly (USD)</label>
+                                            <input type="text" name="weekly" class="form-control" id="weekly"
+                                                   placeholder="No limit">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="daily">Daily (USD)</label>
+                                            <input type="text" name="daily" class="form-control" id="daily"
+                                                   placeholder="No limit">
+                                        </div>
+                                        <button type="submit" class="yellow-btn save-btn">Save</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 account-js">
+                    <h2>Affiliate program</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 pr-0">
+                                    <div class="account-block">
+                                        <div class="account-header-block">
+                                            <div class="account-header-memory">
+                                                <p class="verify"><span class="keyboard-arrow"></span> Verify account</p>
+                                                <p class="error">Your account is not yet verified. Some functions may be unavailable</p>
+                                            </div>
+                                            <div class="account-header-information-block">
+                                                <p>In order for us to comply with the anti-money laundering directive and regulations, maintain high standards of safety, and non-fraudulent behavior, we will ask you to verify your account before your first withdrawal. To verify your account, we need you to send copies of all the following documents to <a href="mailto:docs@farmbet.com" class="farm-email">docs@farmbet.com</a> from your registered email address (during day time it goes within 30 minutes, and during night time you might need to wait till the morning for us to approve it):</p>
+                                                <ul>
+                                                    <li>ID card or passport;</li>
+                                                    <li>A document verifying your home address and full name (it could be an invoice/bill in your name);</li>
+                                                    <li>Only if you deposit/withdraw with credit card: The front side of the credit card. Cover the first 12 digits for your own safety.</li>
+                                                </ul>
+                                                <p>The copies should reveal the entire document, meaning, it can not be a copy of the corner of an invoice or a credit card. Normally, this procedure only occurs on your first withdrawal. The reason why we need to see your credit card is to verify that you are the owner of it, not someone else.</p>
+                                            </div>
+                                        </div>
+                                        <div class="account-main-block">
+                                            <form class="withdraw-form">
+                                                <div class="form-group">
+                                                    <label for="address">Address</label>
+                                                    <input type="text" name="address" class="form-control" id="address"
+                                                           name="address">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="city">City</label>
+                                                    <input type="text" name="city" class="form-control" id="city"
+                                                           name="city">
+                                                </div>
+                                                <div class="two-inputs">
+                                                    <div class="form-group">
+                                                        <label for="country">Country</label>
+                                                        <select name="country" id="country" class="country">
+                                                            <option value="ukraine">Ukraine</option>
+                                                            <option value="russia">Russia</option>
+                                                            <option value="usa">USA</option>
+                                                            <option value="canada">Canada</option>
+                                                            <option value="poland">Poland</option>
+                                                            <option value="cr">Chezh Republic</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="currency">Currency</label>
+                                                        <input type="text" name="currency" class="form-control"
+                                                               id="currency"
+                                                               placeholder="UAH">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ammount">Phone Number</label>
+                                                    <input type="text" class="form-control" name="phoneNumber"
+                                                           id="phoneNumber">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="checkbox" name="updates">
+                                                    <label class="cursor_for_label" for="checkbox">Get updates. We won’t spam!</label>
+                                                </div>
+                                                <button type="submit" class="yellow-btn account-btn">Update</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="account-block2">
+                                        <div class="description-user">
+                                            <p>Name:</p>
+                                            <p>Nickname:</p>
+                                            <p>Email:</p>
+                                            <p>Birth date:</p>
+                                        </div>
+                                        <div class="information-of-description">
+                                            <p>Kateryna zubchevska</p>
+                                            <p>Kateryna zubchevska</p>
+                                            <p>Kateryna@zubchevska</p>
+                                            <p>09-12-92</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 change-js">
+                    <h2>Change Password</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="responsible-block">
+                                <div class="responsible-main-block">
+                                    <form class="responsible-form">
+                                        <div class="form-group">
+                                            <label for="currentPass">Current password</label>
+                                            <input type="password" name="currentPass" class="form-control"
+                                                   id="currentPass">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="newPass">New Password</label>
+                                            <input type="password" name="newPass" class="form-control" id="newPass">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="newPass2">Repeat new password</label>
+                                            <input type="password" name="newPass2" class="form-control" id="newPass2">
+                                        </div>
+                                        <button type="submit" class="yellow-btn save-btn">Update</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <ul class="footer-menu">
+                    <li><a href="!#">Terms & Conditions</a></li>
+                    <li><a href="!#">Privacy Poloicy</a></li>
+                    <li><a href="!#">FAQ</a></li>
+                    <li><a href="!#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+                <div class="footer-icons">
+                    <div class="social">
+                        <a href="!#">
+                            <img src="./img/instagram.png" alt="instagram">
+                        </a>
+                        <a href="!#">
+                            <img src="./img/twitter.png" alt="twitter">
+                        </a>
+                        <a href="!#">
+                            <img src="./img/facebook.png" alt="">
+                        </a>
+                    </div>
+                    <a href="!#" class="footer-logo">
+                        <img src="./img/footer-logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/libs.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/datepicker.js"></script>
+<script src="./js/jquery.formstyler.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
+<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>
